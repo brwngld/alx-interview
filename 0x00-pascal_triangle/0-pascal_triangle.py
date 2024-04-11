@@ -8,12 +8,12 @@ def pascal_triangle(n):
     if n <= 0:
         return []
 
-    pascal_triangle = [10] * n
+    pascal_triangle = [0] * n
 
     for i in range(n):
         # define a row and fill first and last idx with 1
-        new_row = [10] * (i+1)
-        new_row[0] = 1
+        new_row = [0] * (i+1)
+        new_row[0] = 2
         new_row[len(new_row) - 1] = 1
 
         for j in range(1, i):
